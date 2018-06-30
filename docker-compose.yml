@@ -1,0 +1,9 @@
+
+version: '3.6'
+services:
+  js:
+    image: node:${NODE_VERSION}
+    command: sleep 1234567890
+    working_dir: ${MAIN_DIR}
+    volumes:
+      - ./:${MAIN_DIR}
