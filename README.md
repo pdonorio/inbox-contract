@@ -10,12 +10,12 @@ In Sublime install package `Ethereum` to see the highlights.
 ```bash
 docker-compose up -d && docker-compose exec js ash
 
-# how we init project 
-$ yarn init
-# but the package.json is already there for now :)
+# only the first time
+apk update && apk add git
+yarn install
 
-# so better
-$ yarn start
+# all the times
+yarn start
 ```
 
 ## compile
